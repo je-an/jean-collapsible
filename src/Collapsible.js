@@ -39,6 +39,7 @@ define([ // jscs:ignore
             this._setState();
             this.setHeading(this.options.heading);
         };
+        Inheritance.inheritPrototype(Collapsible, DomElement);
         /**
         * @param {String} id - the id of the element which shall be added
         * @param {HTMLElement} element - the element which shall be added to body of the collapsible 
@@ -82,7 +83,7 @@ define([ // jscs:ignore
             this.options.isCollapsed = !this.options.isCollapsed;
             this._setState();
             event.stopPropagation();
-            event.preventDefault(); 
+            event.preventDefault();
         };
         return Collapsible;
     });
