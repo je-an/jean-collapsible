@@ -1,7 +1,7 @@
 ({
     baseUrl: '.',
     out: 'dist/jean-collapsible.js',
-    optimize: 'none',
+    optimize: 'uglify2',
     name: 'node_modules/jean-amd/dist/jean-amd',
     include: ["src/Collapsible"],
     wrap: {
