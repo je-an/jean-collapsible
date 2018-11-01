@@ -32,9 +32,9 @@ define([ // jscs:ignore
                 heading: TypeCheck.isString(options.heading) ? options.heading : "Collapsible",
                 isCollapsed: TypeCheck.isBoolean(options.isCollapsed) ? options.isCollapsed : true,
             }, TypeCheck.isDefined(options) ? options : {}));
-            this.body = DomUtil.getChildByClass(this.element, "body");
-            this.header = DomUtil.getChildByClass(this.element, "header");
-            this.btn = DomUtil.getChildByClass(this.element, "toogle");
+            this.body = DomUtil.getChildByClass(this.element, "collapsible-body");
+            this.header = DomUtil.getChildByClass(this.element, "collapsible-header");
+            this.btn = DomUtil.getChildByClass(this.element, "collapsible-toogle");
             this.element.addEventListener("click", this._onBtnClick.bind(this));
             this._setState();
             this.setHeading(this.options.heading);
