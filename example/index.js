@@ -3,5 +3,7 @@ require(["JeanCollapsible", "DomUtil", "css!bootstrap"], function (JeanCollapsib
 
     });
     document.body.appendChild(collapsible.element);
-    collapsible.add("id", DomUtil.createElementFromMarkup("<div>test</div>"));
+    collapsible.add("id", new JeanCollapsible({
+
+    }).element);
 });

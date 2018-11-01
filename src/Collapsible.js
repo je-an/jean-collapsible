@@ -68,19 +68,21 @@ define([ // jscs:ignore
         Collapsible.prototype._setState = function () {
             var body = this.body, btn = this.btn, options = this.options;
             if (options.isCollapsed) {
-                body.style.height = "0px";
+                body.style.display = "none";
                 btn.innerHTML = options.collapsedArrow;
                 body.classList.remove("border-top");
             } else {
-                body.style.height = "";
+                body.style.display = "block";
                 btn.innerHTML = options.expandedArrow;
                 body.classList.add("border-top");
             }
         };
-        /** */
-        Collapsible.prototype._onBtnClick = function () {
+        /** @param {Object} e - event object */
+        Collapsible.prototype._onBtnClick = function (e) {
             this.options.isCollapsed = !this.options.isCollapsed;
             this._setState();
+            event.stopPropagation();
+            event.preventDefault(); 
         };
         return Collapsible;
     });
