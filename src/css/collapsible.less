@@ -1,0 +1,32 @@
+@background-color: #4A4949;
+@hover-color: lightgreen;
+@border-radius: 5px;
+.jean-collapsible {
+    width: 100%;
+    background: @background-color;
+    border-radius: @border-radius;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    .header {
+        color: white;
+        text-align: left;
+    }
+    .body {
+        color: white;
+        transition: height 0.3s;
+    }
+    .border-top {
+        border-top: 1px solid white;
+    }
+    .toogle {
+        color: white;
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        &:hover {
+            color: @hover-color;
+            cursor: pointer;
+        }
+    }
+}

@@ -19,6 +19,17 @@
         "}));"
     },
      paths:{
-       
+        "text": "node_modules/text/text",
+        "css": "node_modules/require-css/css",
+        "css-builder": "node_modules/require-css/css-builder",
+        "normalize": "node_modules/require-css/normalize",
+        DomElement: "node_modules/jean-dom-element/src/DomElement",
+        DomUtil: "node_modules/jean-dom-util/src/DomUtil",
+        TypeCheck: "node_modules/jean-type-check/src/TypeCheck",
+        Failure: "node_modules/jean-failure/src/Failure",
+        Inheritance: "node_modules/jean-inheritance/src/Inheritance",
+        Merge: "node_modules/jean-merge/src/Merge",
+        "collapsible-html": "src/html/collapsible.html",
+        "collapsible-css": "src/css/collapsible"
     }
 })

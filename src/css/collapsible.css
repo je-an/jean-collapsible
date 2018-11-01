@@ -1,0 +1,29 @@
+.jean-collapsible {
+  width: 100%;
+  background: #4A4949;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.jean-collapsible .header {
+  color: white;
+  text-align: left;
+}
+.jean-collapsible .body {
+  color: white;
+  transition: height 0.3s;
+}
+.jean-collapsible .border-top {
+  border-top: 1px solid white;
+}
+.jean-collapsible .toogle {
+  color: white;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+}
+.jean-collapsible .toogle:hover {
+  color: lightgreen;
+  cursor: pointer;
+}
