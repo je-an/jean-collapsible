@@ -6,25 +6,25 @@
   position: relative;
   cursor: pointer;
 }
-.jean-collapsible .header {
+.jean-collapsible .collapsible-header {
   color: white;
   text-align: left;
   font-weight: bold;
 }
-.jean-collapsible .body {
+.jean-collapsible .collapsible-body {
   color: white;
   transition: height 0.3s;
 }
 .jean-collapsible .border-top {
   border-top: 1px solid white;
 }
-.jean-collapsible .toogle {
+.jean-collapsible .collapsible-toogle {
   color: white;
   position: absolute;
   top: 3px;
   right: 5px;
 }
-.jean-collapsible .toogle:hover {
+.jean-collapsible .collapsible-toogle:hover {
   color: lightgreen;
   cursor: pointer;
 }
