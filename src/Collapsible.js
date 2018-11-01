@@ -21,6 +21,7 @@ define([ // jscs:ignore
          * @alias Slider 
          * @constructor
          * @param {Object} options - options object
+         * @param {String} options.heading - the heading of this collapsible
          * @param {Boolean} [options.isCollapsed=true] - True if collapsible is collapsed, false otherwise
          */
         var Collapsible = function (options) {
@@ -28,12 +29,15 @@ define([ // jscs:ignore
                 collapsedArrow: "&#9660;",
                 expandedArrow: "&#9650;",
                 html: controlHtml,
+                heading: TypeCheck.isString(options.heading) ? options.heading : "Collapsible",
                 isCollapsed: TypeCheck.isBoolean(options.isCollapsed) ? options.isCollapsed : true,
             }, TypeCheck.isDefined(options) ? options : {}));
             this.body = DomUtil.getChildByClass(this.element, "body");
+            this.header = DomUtil.getChildByClass(this.element, "header");
             this.btn = DomUtil.getChildByClass(this.element, "toogle");
             this.element.addEventListener("click", this._onBtnClick.bind(this));
             this._setState();
+            this.setHeading(this.options.heading);
         };
         /**
         * @param {String} id - the id of the element which shall be added
@@ -55,6 +59,10 @@ define([ // jscs:ignore
                 element.remove();
             }
             return isRemoved;
+        };
+        /** @param {String} heading - the new collapsible heading */
+        Collapsible.prototype.setHeading = function (heading) {
+            this.header.innerHTML = TypeCheck.isString(heading) ? heading : this.options.heading;
         };
         /** */
         Collapsible.prototype._setState = function () {
