@@ -23,8 +23,8 @@
   font-weight: bold;
   color: white;
   position: absolute;
-  top: 5px;
-  right: 15px;
+  top: 2px;
+  right: 10px;
 }
 .jean-collapsible .collapsible-toogle:hover {
   color: lightgreen;

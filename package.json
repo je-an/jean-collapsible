@@ -1,6 +1,6 @@
 {
   "name": "jean-collapsible",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Provides a collapsible control ",
   "main": "dist/jean-collapsible.js",
   "scripts": {
