@@ -26,8 +26,8 @@ define([ // jscs:ignore
          */
         var Collapsible = function (options) {
             Inheritance.inheritConstructor(DomElement, this, Merge({ // jscs:ignore
-                collapsedArrow: "&#9660;",
-                expandedArrow: "&#9650;",
+                collapsedArrow: "&#8744;",
+                expandedArrow: "&#8743;",
                 html: controlHtml,
                 heading: TypeCheck.isString(options.heading) ? options.heading : "Collapsible",
                 isCollapsed: TypeCheck.isBoolean(options.isCollapsed) ? options.isCollapsed : true,
