@@ -18,7 +18,7 @@ define([ // jscs:ignore
 ) {
         /**
          * Provides a collapsible control  
-         * @alias Slider 
+         * @alias Slider
          * @constructor
          * @param {Object} options - options object
          * @param {String} options.heading - the heading of this collapsible

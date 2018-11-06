@@ -31,5 +31,6 @@
         Merge: "node_modules/jean-merge/src/Merge",
         "collapsible-html": "src/html/collapsible.html",
         "collapsible-css": "src/css/collapsible"
-    }
+    },
+    stubModules: ["css", "text", "normalize", "css-builder"]
 })
