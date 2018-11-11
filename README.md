@@ -9,6 +9,7 @@ Supports both CommonJS and AMD eco system. If there is no loader, Collapsible is
 - Use it as browser variable
 ```js
 var obj = new Collapsible({
+    heading: "CollapsibleName",
     isCollapsed: true
 });
 ```
@@ -26,6 +27,7 @@ require(["path/to/Collapsible"], function(Collapsible){
 
 **Options**
 
+- **heading**: `Boolean` - `mandatory` - the heading
 - **isCollapsed**: `Boolean` - `optional` - True if collapsible is collapsed, false otherwise
 
 ### Collapsible.add(id, name) 
